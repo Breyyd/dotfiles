@@ -1,0 +1,13 @@
+app.zen_browser.zen
+com.discordapp.Discord
+com.github.tchx84.Flatseal
+com.mattjakeman.ExtensionManager
+com.mojang.Minecraft
+com.spotify.Client
+com.visualstudio.code
+io.github.debasish_patra_1987.linuxthemestore
+md.obsidian.Obsidian
+org.gimp.GIMP
+org.kde.kdenlive
+org.prismlauncher.PrismLauncher
+org.vinegarhq.Sober
