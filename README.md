@@ -14,20 +14,21 @@ and system configuration using simple Bash scripts.
 - Profile-based setup (notebook / desktop)
 - Backup & restore scripts
 
-## 📁 Repository Structure
+## 📂 Repository structure
 
-📁 dotfiles                          # Fedora Linux dotfiles repository
-├─📁 gnome                           # GNOME desktop configuration
-│  ├─ extensions-settings.dconf     # GNOME extensions settings
-│  ├─ interface.dconf               # Theme, icons and cursor configuration
-│  └─ shell.dconf                   # GNOME Shell behavior and tweaks
-│
-├─📄 packages.txt                   # List of user-installed DNF packages
-├─📄 README.md                      # Project documentation
-└─📄 .gitignore                     # Git ignored files
+```text
+dotfiles
+├─ 📁 gnome
+│  ├─ interface.dconf
+│  ├─ shell.dconf
+│  └─ extensions-settings.dconf
+├─ 📁 scripts
+│  ├─ install.sh
+│  └─ backup.sh
+├─ 📄 packages.txt
+└─ 📄 README.md
 
 ### Restore system (fresh install)
-
 ```bash
 git clone https://github.com/Breyyd/dotfiles.git
 cd dotfiles
