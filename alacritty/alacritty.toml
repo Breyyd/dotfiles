@@ -1,0 +1,21 @@
+[window]
+padding = { x = 5, y = 5 }
+dynamic_title = true
+opacity = 0.85  # define transparência
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Italic"
+
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
