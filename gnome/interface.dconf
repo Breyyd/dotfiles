@@ -1,0 +1,11 @@
+[/]
+accent-color='pink'
+clock-format='24h'
+color-scheme='prefer-dark'
+cursor-size=32
+cursor-theme='Naroz'
+enable-animations=true
+font-hinting='full'
+gtk-theme='MacTahoe-Dark-solid'
+icon-theme='Colloid-Dark'
+show-battery-percentage=true
