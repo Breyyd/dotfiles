@@ -16,26 +16,15 @@ and system configuration using simple Bash scripts.
 
 ## 📁 Repository Structure
 
-dotfiles/
-├── install.sh
-├── backup.sh
-├── profiles/
-│ ├── notebook/
-│ │ ├── packages.txt
-│ │ ├── flatpaks.txt
-│ │ └── gnome.dconf
-│ └── desktop/
-│ ├── packages.txt
-│ ├── flatpaks.txt
-│ └── gnome.dconf
-├── gnome/
-│ ├── extensions.txt
-│ ├── extensions-settings.dconf
-│ ├── interface.dconf
-│ └── shell.dconf
-└── README.md
-
-## 🚀 Usage
+📁 dotfiles                          # Fedora Linux dotfiles repository
+├─📁 gnome                           # GNOME desktop configuration
+│  ├─ extensions-settings.dconf     # GNOME extensions settings
+│  ├─ interface.dconf               # Theme, icons and cursor configuration
+│  └─ shell.dconf                   # GNOME Shell behavior and tweaks
+│
+├─📄 packages.txt                   # List of user-installed DNF packages
+├─📄 README.md                      # Project documentation
+└─📄 .gitignore                     # Git ignored files
 
 ### Restore system (fresh install)
 
