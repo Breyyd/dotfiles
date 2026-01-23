@@ -31,15 +31,19 @@ dotfiles
 ├─ 📄 packages.txt                    # List of user-installed DNF packages
 ├─ 📄 flatpaks.txt                    # List of installed Flatpak apps
 └─ 📄 README.md                       # Project documentation
+
 🚀 Usage
+
 🆕 Restore system (fresh install)
 git clone https://github.com/Breyyd/dotfiles.git
 cd dotfiles
 chmod +x install.sh
 ./install.sh notebook
+
 Available profiles:
 notebook
 desktop
+
 💾 Backup current system
 
 Before reinstalling or switching machines:
@@ -48,6 +52,7 @@ chmod +x backup.sh
 git add .
 git commit -m "Backup Fedora configuration"
 git push
+
 🧠 Requirements
 
 ✔ Fedora Linux
@@ -72,6 +77,7 @@ This project was created to:
 💻 Practice Linux automation and Bash scripting
 
 🚀 Build a personal DevOps-style portfolio
+
 📄 License
 
 This repository is for personal use and learning purposes!
