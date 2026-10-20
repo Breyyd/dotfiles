@@ -18,7 +18,6 @@ Features
 Usage
 Restoring the System (Fresh Install)
 After installing Fedora, clone the repository, grant execution permissions, and run the installation script with your chosen profile:
-
 git clone https://github.com/Breyyd/dotfiles.git
 cd dotfiles
 chmod +x scripts/install.sh
