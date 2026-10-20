@@ -14,19 +14,6 @@ Features
     Profile-based configurations (e.g., notebook vs. desktop)
 
     Dedicated backup and restore scripts
-    
-Repository Structure
-dotfiles
-├─ gnome/                             # GNOME environment configurations
-│  ├─ interface.dconf                 # Theme, icon, and cursor settings
-│  ├─ shell.dconf                     # GNOME Shell settings
-│  └─ extensions-settings.dconf       # Extension configurations
-├─ scripts/                           # Automation scripts
-│  ├─ install.sh                      # System setup and restore script
-│  └─ backup.sh                       # Configuration export script
-├─ packages.txt                       # List of system DNF packages
-├─ flatpaks.txt                       # List of installed Flatpak apps
-└─ README.md                          # Project documentation
 
 Usage
 Restoring the System (Fresh Install)
