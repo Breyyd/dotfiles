@@ -1,84 +1,82 @@
-# 🐧 Fedora Dotfiles & Setup Automation
+Personal dotfiles and bash scripts to automate the post-installation setup and customization of Fedora Linux. This repository allows for quickly rebuilding the GNOME desktop environment, package configurations, and system settings.
+Features
 
-This repository contains my personal Fedora Linux setup automation.
-It allows me to quickly rebuild my GNOME environment, apps, and system configuration using simple Bash scripts.
+    Automated Fedora post-install setup
 
----
+    GNOME desktop configuration restoration via dconf (themes, icons, shell behavior)
 
-## ✨ Features
+    Automated GNOME Shell extension enablement
 
-- ⚙️ Automated Fedora setup  
-- 🎨 GNOME configuration (themes, icons, shell behavior)  
-- 🧩 GNOME Extensions auto-enable  
-- 📦 DNF package installation  
-- 📦 Flatpak application installation  
-- 📁 Profile-based setup (notebook / desktop)  
-- 💾 Backup & restore scripts  
+    DNF package installation from custom lists
 
----
+    Flatpak application installation
 
-## 📂 Repository Structure
+    Profile-based configurations (e.g., notebook vs. desktop)
 
-```text
+    Dedicated backup and restore scripts
+    
+Repository Structure
 dotfiles
-├─ 📁 gnome                           # GNOME desktop settings
-│  ├─ interface.dconf                 # Theme, icons and cursor settings
-│  ├─ shell.dconf                     # GNOME Shell configuration
-│  └─ extensions-settings.dconf       # GNOME extensions configuration
-├─ 📁 scripts                         # Automation scripts
-│  ├─ install.sh                      # Restore system settings
-│  └─ backup.sh                       # Backup current system
-├─ 📄 packages.txt                    # List of user-installed DNF packages
-├─ 📄 flatpaks.txt                    # List of installed Flatpak apps
-└─ 📄 README.md                       # Project documentation
+├─ gnome/                             # GNOME environment configurations
+│  ├─ interface.dconf                 # Theme, icon, and cursor settings
+│  ├─ shell.dconf                     # GNOME Shell settings
+│  └─ extensions-settings.dconf       # Extension configurations
+├─ scripts/                           # Automation scripts
+│  ├─ install.sh                      # System setup and restore script
+│  └─ backup.sh                       # Configuration export script
+├─ packages.txt                       # List of system DNF packages
+├─ flatpaks.txt                       # List of installed Flatpak apps
+└─ README.md                          # Project documentation
 
-🚀 Usage
+Usage
+Restoring the System (Fresh Install)
+After installing Fedora, clone the repository, grant execution permissions, and run the installation script with your chosen profile:
 
-🆕 Restore system (fresh install)
 git clone https://github.com/Breyyd/dotfiles.git
 cd dotfiles
-chmod +x install.sh
-./install.sh notebook
+chmod +x scripts/install.sh
+./scripts/install.sh notebook
 
 Available profiles:
-notebook
-desktop
 
-💾 Backup current system
+    notebook
 
-Before reinstalling or switching machines:
-chmod +x backup.sh
-./backup.sh notebook
+    desktop
+
+Backing Up System Configurations
+
+Run the backup script to update the repository files with your current system setup before reinstalling or switching machines:
+chmod +x scripts/backup.sh
+./scripts/backup.sh notebook
 git add .
 git commit -m "Backup Fedora configuration"
 git push
 
-🧠 Requirements
+Prerequisites
 
-✔ Fedora Linux
-✔ GNOME Desktop Environment
-✔ Bash
-✔ Flatpak enabled
-✔ Internet connection
+    Fedora Linux (GNOME Edition)
 
-⚠️ Notes
+    Bash
 
-Some GNOME extensions may require logout/login to fully apply.
+    Flatpak enabled with Flathub configured
 
-This setup is tailored for Fedora GNOME and may not work on other desktops.
-📌 Motivation
+    Active internet connection
 
-This project was created to:
+Notes
 
-🛠 Speed up Fedora reinstallation
+    Some GNOME extensions may require a session logout or desktop restart to apply changes fully.
 
-🔁 Keep system configuration versioned
+    This setup is tailored specifically for Fedora GNOME and will require modifications to run on other distributions or desktop environments.
 
-💻 Practice Linux automation and Bash scripting
+Motivation
+This project was built to:
 
-🚀 Build a personal DevOps-style portfolio
+    Speed up the post-installation process on new Fedora deployments
 
-📄 License
+    Maintain version-controlled system configurations via Git
 
-This repository is for personal use and learning purposes!
+    Practice Bash scripting and Linux system automation
 
+    Build a practical portfolio focused on SysAdmin and DevOps practices
+
+Maintained for personal use and learning purposes. Feel free to fork, adapt, or reference it for your own setup.
